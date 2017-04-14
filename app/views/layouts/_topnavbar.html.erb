@@ -1,0 +1,24 @@
+<div class="top-head-title">
+	<span>
+		<a href="#" class="legal-adv-titl">Welcome</a>
+		<a href="#" class="legal-adv-titl">
+			<i class="fa fa-phone">+91-868-638-26</i>
+		</a>
+	</span>
+</div>
+<header>
+	<%= navbar id: 'navbar' do %>
+	  <%= vertical id: 'vertical', :class => "en logo", data: {js: 1} do %>
+	    <%#= link_to 'Home', '/' %>
+	    <%= image_tag "canlogo.png", :class => "logoImg" %>
+	  <% end %>
+	  <%= horizontal class: :en, data: {js: 2} do %>
+	    <%= nav class: 'navbar-right' do %>
+	    <%= active_link_to "Profile" , profile_path %>
+	    <%= active_link_to "Service" , service_path %>
+	    <%= active_link_to "Contact" , contact_path %>
+	    <%= active_link_to "Sing-up",'/#login' %>
+	    <% end %>
+	  <% end %>
+	<% end %>
+</header>

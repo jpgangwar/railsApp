@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>FinalApp</title>
+		<meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+		<%= csrf_meta_tags %>
+		<%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%#= stylesheet_link_tag 'font-awesome/css/font-awesome', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+	</head>
+	<body>
+		<%= render 'layouts/topnavbar' %>
+		<div id="wrapper" style="background: #ccc; height: 100%;">
+			<div class="page-layout">
+				<%= yield %>
+			</div>
+			<footer>
+				<%= render 'layouts/footer' %>
+			</footer>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= require font-awesome
+ */
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+.top-head-title{
+
+	.legal-adv-titl{
+		font-size: 16px;
+	    background: #003046;
+	    color: #fff;
+	    font-weight: 500;
+	    letter-spacing: 1px;
+	    display: block;
+	    text-align: center;
+	    padding: 5px 20px;
+	    text-decoration: none;
+	    font-style: italic;
+
+	    &:hover{
+	    	color: #fc4a1a;
+	    	transition: 0.5s
+	    }
+	}
+}
+
+header{
+
+	.navbar{
+		margin-bottom: 0px;
+		background:#fff;
+		border: none;
+		border-radius:0px;
+
+		.logo{
+
+			.logoImg{
+				width: 100px;
+				height: 93px;
+			}
+		}
+		.navbar-nav{
+
+			li{
+				padding-top:20px;
+				padding-bottom:20px;
+
+				
+
+				&:hover a{
+					border-bottom: 3px solid #fc4a1a;
+					color: #fc4a1a;
+					transition: 0.2s;
+
+				}
+				a{
+					color: #003046;
+				    font-size: 18px;
+				    font-weight: 500;
+				    letter-spacing: 1px;
+				}
+			}
+		}
+	}
+}
