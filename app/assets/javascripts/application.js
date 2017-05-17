@@ -15,3 +15,14 @@
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require_tree .
+
+
+$(document).ready(function(){
+
+	$('#get-in-touch').click(function(){
+		$('#get-touch-from').show();
+		$('#get-in-touch').hide();
+		$('#Self-filing-free').hide();
+		console.log('success');
+	});
+});

@@ -1,0 +1,264 @@
+.footer-sec{
+	background:#003046;
+	float: left;
+    width: 100%;
+
+    .content-sectn{
+
+    	padding: 20px 0;
+
+    	.link-section{
+
+    		.footer-links-section {
+			
+			.panel {
+				background-color: transparent;
+				color: white;
+				padding: 0 !important;
+
+				.panel-heading {
+					padding-left:0;
+					padding-right: 0;
+
+					h3.panel-title {
+						font-size: 22px;
+						font-weight: 400;
+						display: inline-block;
+						// border-bottom: 1px solid white;
+						color: #e8ebfa;
+					}
+
+					.navy-lines{
+						width: 48px;
+					    height: 1px;
+					    margin: 10px 0px 0px 0px;
+					    border-bottom: 2px solid white;
+					}
+				}
+
+				.panel-body {
+					padding: 0 !important;
+
+					ul {
+						padding-left:0;
+							li {
+							display: block;
+							line-height: 25px;
+
+							a {
+								font-size: 14px;
+								font-weight: 400;
+								color: #23c6c8;
+								display: inline-block;
+
+								&:hover {
+								color: white;
+								text-decoration: none;
+								}
+							}
+						}
+					}
+				}
+			}
+
+			.panel.notes_wrapper .panel-body{
+
+				ul li {
+
+					&:last-child {
+						margin-top: 10px;
+
+						a {
+							color: #003046;
+							background-color: white;
+							padding: 2px 5px;
+
+							&:hover {
+								opacity: 0.9;
+							}
+						}
+					}
+				}
+			}
+		}
+
+    		.filing-sec{
+    			width: 100%;
+    			height: 365px;
+    			background:white;
+    // 			display: flex;
+    // 			justify-content: center; 
+				// align-items: center;
+				// border-radius:4px;
+
+				.first-para{
+					padding-top: 23px;
+				}
+
+    			p{
+    				color: #003046;
+    				// text-align: center;
+    				padding: 10px 10px;
+    				line-height: 1.5;
+    				font-size: 16px;
+    			}
+    		}
+    	}
+    }
+
+    .logo-copyright-section {
+			float: left;
+			width: 100%;
+			border-top: 1px solid white;
+		    margin-top: 20px;
+		    padding-top: 20px;
+
+			.footer-logo {
+
+				a {
+					display: inline-block;
+				}
+			}
+
+			.copy_right {
+
+				p {
+					font-size: 15px;
+					color: white;
+					vertical-align: middle;
+					text-align: center;
+					padding-top: 20px;
+
+					a{
+						color: white;
+
+						&:hover{
+							color: #fc4c1a;
+							text-decoration: none;
+						}
+					}
+				}
+			}
+			ul.social-icons {
+				text-align: right;
+				padding-top: 15px;
+
+				li {
+
+					a {
+						font-size: 22px;
+
+						i {
+							color: white;
+						}
+
+						&:hover i{
+							color: white;
+							opacity: 0.9;
+						}
+					}
+
+				}
+			}
+		}
+}
+
+.navy-line{
+	width: 60px;
+    height: 1px;
+    margin: 0px auto 30px;
+    border-bottom: 2px solid #003046
+}
+
+div.myclass {
+	font-size: 80px !important;
+    padding-bottom: 46px;
+    text-align: left;
+    color: #f45db5;
+
+	&:before{
+	    content: '\201C';
+	    position: absolute;
+	}
+}
+
+//button style
+
+.margin-top{
+	margin-bottom:20px;
+}
+
+
+.formBtnStartFiling{
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #FFF;
+    padding: 6px 12px;
+    border: none;
+    background-color: #f45db5;
+
+    &:hover{
+    	opacity: 0.8;
+		transition: 0.3s;
+    }
+}
+
+.formBtnTouch{
+    font-weight: 600;
+    font-size: 16px;
+    text-align: center;
+    color: #FFF;
+    padding: 6px 57px;
+    border: none;
+    background-color: #fc4a1a;
+
+    &:hover{
+    	opacity: 0.8;
+		transition: 0.3s;
+    }
+}
+
+
+
+// landing page media query
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait)  { }
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)  { }
+
+@media (max-width: 768px) {
+	.footer-sec{
+
+		.content-sectn {
+			
+			.link-section{
+
+				.filing-sec{
+
+					p{
+						padding: 12px 10px;
+					    line-height: 1.3;
+					    font-size: 14px;
+					}
+				}
+			}
+
+		}
+
+		.logo-copyright-section{
+
+			.copy_right p{
+				padding-top:6px;
+			}
+
+			ul.social-icons{
+				text-align:center;
+			}
+
+			.footer-logo{
+				
+				text-align: center;
+			}
+		}
+	}
+}

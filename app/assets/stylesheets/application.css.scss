@@ -12,13 +12,20 @@
  *
  *= require_tree .
  *= require_self
- *= require font-awesome
  */
+@import "variable";
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "font-awesome";
+@import "profile";
+@import "service";
+@import "contact";
+@import "common";
 
 
 .top-head-title{
+	position: relative;
+    z-index: 999;
 
 	.legal-adv-titl{
 		font-size: 16px;
